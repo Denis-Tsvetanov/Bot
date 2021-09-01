@@ -11,23 +11,6 @@ This branch contains samples for the released version of the **Microsoft Bot Fra
 
 To use the samples, clone this GitHub repository using Git.
 
-```bash
-    git clone https://github.com/Microsoft/BotBuilder-Samples.git
-    cd BotBuilder-Samples
-```
-
-## Sample lists
-
-Samples are designed to illustrate functionality you'll need to implement to build great bots!
-
-- [Bot essentials](#bot-essentials)
-- [Advanced bots](#advanced-bots)
-- [Authentication samples](#authentication-samples)
-- [QnA Maker samples](#qna-maker-samples)
-- [Teams samples](#teams-samples)
-- [Skills samples](#skills-samples)
-- [Custom adapter samples](#custom-adapter-samples)
-- [Experimental / preview samples](#experimental--preview-samples)
 
 ### Bot essentials
 
