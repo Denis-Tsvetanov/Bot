@@ -34,13 +34,11 @@
           "allowInterruptions": false,
           "invalidPrompt": "${TextInput_InvalidPrompt_UjNmVO()}",
           "prompt": "${TextInput_Prompt_UjNmVO()}",
-          "property": "user.postalcode",
+          "property": "user.cityname",
           "outputFormat": "=trim(this.value)",
           "unrecognizedPrompt": "${TextInput_UnrecognizedPrompt_UjNmVO()}",
-          "validations": [
-            "length(this.value) == 5"
-          ],
-          "defaultValue": "90210"
+          "validations": [],
+          "defaultValue": "Sofia"
         },
         {
           "$kind": "Microsoft.HttpRequest",
@@ -49,8 +47,8 @@
           },
           "resultProperty": "dialog.api_response",
           "method": "GET",
-          "url": "http://api.openweathermap.org/data/2.5/weather?zip=${user.postalcode},us&appid=689a2ed31513637ade7bd6454a1cc03e",
-          "responseType": "json"
+          "responseType": "json",
+          "url": "http://api.openweathermap.org/data/2.5/weather?q=${user.cityname}&appid=689a2ed31513637ade7bd6454a1cc03e"
         },
         {
           "$kind": "Microsoft.IfCondition",
@@ -116,7 +114,7 @@
               "$designer": {
                 "id": "Wl9E6M"
               },
-              "property": "user.postalcode"
+              "property": "user.cityname"
             }
           ]
         }

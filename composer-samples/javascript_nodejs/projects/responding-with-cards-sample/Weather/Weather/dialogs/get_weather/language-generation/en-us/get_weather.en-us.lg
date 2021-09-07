@@ -6,21 +6,21 @@
 ]
 
 # SendActivity_SorEbg_text()
-- Let's check the weather.
+- Hi , we are about to check the weather!
 # TextInput_Prompt_UjNmVO()
 [Activity
     Text = ${TextInput_Prompt_UjNmVO_text()}
 ]
 
 # TextInput_Prompt_UjNmVO_text()
-- What's your postal code?
+- Which city are you looking for?
 # TextInput_UnrecognizedPrompt_UjNmVO()
 [Activity
     Text = ${TextInput_UnrecognizedPrompt_UjNmVO_text()}
 ]
 
 # TextInput_UnrecognizedPrompt_UjNmVO_text()
-- Sorry, I do not understand '${this.value}'. Please specify a 5 digit postal code in the format 12345.
+- Sorry, I do not understand '${this.value}'. Please type in a city name.
 # TextInput_InvalidPrompt_UjNmVO()
 [Activity
     Text = ${TextInput_InvalidPrompt_UjNmVO_text()}
