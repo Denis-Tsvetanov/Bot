@@ -28,13 +28,6 @@
 
 # TextInput_InvalidPrompt_UjNmVO_text()
 - Sorry, '${this.value}' is not valid. I'm looking for a 5 digit number as postal code. Please specify a 5 digit postal code in the format 12345.
-# SendActivity_v20e6Z()
-[Activity
-    Text = ${SendActivity_v20e6Z_text()}
-]
-
-# SendActivity_v20e6Z_text()
-- The weather is ${dialog.fahrenheit}F or ${dialog.celsius}C and ${dialog.weather}.
 # SendActivity_F5NmPo()
 [Activity
     Text = ${SendActivity_F5NmPo_text()}
@@ -42,3 +35,14 @@
 
 # SendActivity_F5NmPo_text()
 - Something went wrong: ${dialog.api_response.content.message}.
+# SendActivity_vx9sIs()
+[Activity
+    Attachments = ${SendActivity_vx9sIs_attachment_3tqz55()}
+]
+
+# SendActivity_vx9sIs_attachment_3tqz55()
+[ThumbnailCard
+  title = Weather for ${dialog.city}
+  text =The weather is ${dialog.weather} and ${dialog.fahrenheit}F or ${dialog.celsius}C wind speed is at about ${dialog.wind.speed} km per hour
+  
+]

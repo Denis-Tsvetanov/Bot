@@ -1,12 +1,5 @@
 [import](common.lg)
 
-# SendActivity_Greeting()
-[Activity
-    Text = ${SendActivity_Greeting_text()}
-]
-
-# SendActivity_Greeting_text()
-- Welcome to Weather Bot! Type "weather" to get started.
 # SendActivity_DidNotUnderstand()
 [Activity
     Text = ${SendActivity_DidNotUnderstand_text()}
@@ -14,3 +7,16 @@
 
 # SendActivity_DidNotUnderstand_text()
 - Sorry, I didn't get that.
+# SendActivity_859266()
+[Activity
+    Attachments = ${SendActivity_859266_attachment_cbFlSE()}
+]
+
+# SendActivity_859266_attachment_cbFlSE()
+[ThumbnailCard
+  title = Weathercast 24h
+  subtitle = WeatherBot 
+  text = Press weather to get started.
+  image = https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr_GFmTm6jEaseDMDx4-L8bNE_4GKcxVdU1g&usqp=CAU
+  buttons = WEATHER
+]
