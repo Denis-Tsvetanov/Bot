@@ -90,15 +90,19 @@
                 {
                   "property": "dialog.fahrenheit",
                   "value": "=round((dialog.celsius * 9/5) + 32)"
+                },
+                {
+                  "property": "dialog.wind.speed",
+                  "value": "=dialog.api_response.content.wind.speed"
                 }
               ]
             },
             {
               "$kind": "Microsoft.SendActivity",
               "$designer": {
-                "id": "v20e6Z"
+                "id": "vx9sIs"
               },
-              "activity": "${SendActivity_v20e6Z()}"
+              "activity": "${SendActivity_vx9sIs()}"
             }
           ],
           "elseActions": [
